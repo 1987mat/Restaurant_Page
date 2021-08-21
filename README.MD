@@ -1,0 +1,1 @@
+Restaurant Page project using HTML/CSS/JS and Webpack.
