@@ -2,10 +2,15 @@ import { content } from './index';
 
 function renderMenu() {
   const menuDiv = document.createElement('div');
+  const hr = document.createElement('hr');
+  const title = document.createElement('h2');
+  title.innerHTML = 'MENU';
+
 
   const pizzaTitle = document.createElement('h3');
   pizzaTitle.innerHTML = 'Pizzas';
-  menuDiv.appendChild(pizzaTitle)
+  menuDiv.appendChild(title);
+  menuDiv.appendChild(pizzaTitle);
 
   const pizzaMenu = [
     {
@@ -28,7 +33,6 @@ function renderMenu() {
 
   const drinkMenu = ['Sparkling Water', 'Coca-Cola', 'House Wine', 'Guinness Beer'];
 
-
   pizzaMenu.forEach((item) => {
 
     let name = document.createElement('h5');
@@ -41,6 +45,8 @@ function renderMenu() {
     content.appendChild(menuDiv);
 
   });
+
+  menuDiv.appendChild(hr);
 
   const drinkTitle = document.createElement('h3');
   drinkTitle.innerHTML ='Drinks';

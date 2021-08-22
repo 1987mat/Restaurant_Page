@@ -3,7 +3,7 @@ import { content } from './index';
 function renderNav() {
   const pageTitle = document.createElement('h1');
   pageTitle.innerHTML = 'Pizzeria Del Campo';
-  const navItems = ['Home', 'Menu', 'About'];
+  const navItems = ['Home', 'Menu', 'Contact'];
   const nav = document.createElement('nav');
   const ul = document.createElement('ul');
  
@@ -14,7 +14,6 @@ function renderNav() {
     li.appendChild(document.createTextNode(item));
     ul.appendChild(li);
   }
-
   nav.appendChild(ul);
   content.appendChild(nav);
   ul.before(pageTitle);
