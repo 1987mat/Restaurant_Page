@@ -1,3 +1,4 @@
+import "./style.css";
 import { renderNav } from './navbar';
 import { homePage } from './home';
 import { renderMenu } from './menu';
@@ -31,10 +32,10 @@ function contact() {
 homePage();
 footerInfo();
 
-// Event listeners when clicking the nav
+// Event listeners when clicking the nav links
 document.addEventListener('click', (e) => {
   const target = e.target.innerText;
-  
+
   if(target == 'Home') {
     home();
   }

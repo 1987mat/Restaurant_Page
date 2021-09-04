@@ -1,0 +1,51 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+nav {
+  background: aliceblue;
+  height: 120px;
+}
+
+.main-title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav-div {
+  height: 60px;
+}
+
+.nav-links {
+  font-size: 20px;
+  padding: 10px;
+  margin: 173px;
+  width: 5px;
+
+}
+
+.nav-links:hover {
+  cursor: pointer;
+  position: relative;
+  bottom: 3px;
+  color: darkgray;
+  font-weight: bolder;
+}
+
+.home-div, .menu-div, .address-div, .hours-div {
+  text-align: center;
+  margin: 80px;
+}
+
+.footer-div {
+  height: 100px;
+  background: aliceblue;
+}
+
+.copyright {
+  font-size: 18px;
+  padding: 20px;
+}
+
+

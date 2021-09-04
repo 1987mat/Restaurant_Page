@@ -1,49 +1,29 @@
 import { content } from './index';
 
 function contactInfo() {
-  const hoursDiv = document.createElement('div');
+  // Create 2 divs for Address and Hours
   const addressDiv = document.createElement('div');
+  addressDiv.classList.add('address-div');
+  const hoursDiv = document.createElement('div');
+  hoursDiv.classList.add('hours-div');
 
-  const address = [' 2023 Lorem Ipsum Street', '9000, New York, NY'];
+  // Address
+  const addressTitle = document.createElement('h4');
+  addressTitle.innerHTML = 'ADDRESS';
+  addressDiv.appendChild(addressTitle);
+  const address = document.createElement('p');
+  address.innerHTML = '2023 Lorem Ipsum Street, 9000 <br><br> New York, NY';
+  addressDiv.appendChild(address);
+  content.appendChild(addressDiv);
 
-  address.forEach((item => {
-    const ul = document.createElement('ul');
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(item));
-    ul.appendChild(li);
-    addressDiv.appendChild(ul);
-    content.appendChild(addressDiv);
-  }));
-
+  // Hours
   const hoursTitle = document.createElement('h4');
   hoursTitle.innerHTML = 'HOURS';
-  content.appendChild(hoursTitle);
-
-  const hours = [
-    {
-      day: 'Monday - Thursday',
-      time: '10am to 9pm'
-    },
-    {
-      day: 'Friday - Saturday',
-      time: '10am to 11pm'
-    },
-    {
-      day: 'Sunday',
-      time: 'Closed'
-    },
-  ];
-
-  hours.forEach(item => {
-    
-    let day = document.createElement('h4');
-    day.innerHTML = item.day;
-    let time = document.createElement('h5');
-    time.innerHTML = item.time;
-    hoursDiv.appendChild(day);
-    day.after(time);
-    content.appendChild(hoursDiv);
-  });
+  hoursDiv.appendChild(hoursTitle);
+  const hours = document.createElement('p');
+  hours.innerHTML = 'Monday - Thursday : 9am to 9pm <br><br> Friday - Saturday : 9am to 11pm <br><br> Sunday : Closed';
+  hoursDiv.appendChild(hours);
+  content.appendChild(hoursDiv);
 }
 
 export { contactInfo };

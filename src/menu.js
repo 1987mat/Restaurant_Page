@@ -2,6 +2,7 @@ import { content } from './index';
 
 function renderMenu() {
   const menuDiv = document.createElement('div');
+  menuDiv.classList.add('menu-div');
   const hr = document.createElement('hr');
   const title = document.createElement('h2');
   title.innerHTML = 'MENU';
@@ -31,11 +32,9 @@ function renderMenu() {
     },
   ];
 
-  const drinkMenu = ['Sparkling Water', 'Coca-Cola', 'House Wine', 'Guinness Beer'];
-
   pizzaMenu.forEach((item) => {
 
-    let name = document.createElement('h5');
+    let name = document.createElement('h4');
     let description = document.createElement('p');
     name.innerHTML = item.name;
     description.innerHTML = item.description;
@@ -50,17 +49,12 @@ function renderMenu() {
 
   const drinkTitle = document.createElement('h3');
   drinkTitle.innerHTML ='Drinks';
-  menuDiv.appendChild(drinkTitle);
+  const drinks = document.createElement('p');
+  drinks.innerHTML = 'Sparkling Water <br><br> Coca-Cola <br><br> House Wine <br><br> House Beer';
 
-  drinkMenu.forEach((item) => {
-    let name = document.createElement('h5');
-    name.innerHTML = item;
-    const ul = document.createElement('ul');
-    const li = document.createElement('li');
-    li.appendChild(name);
-    ul.appendChild(li);
-    menuDiv.appendChild(ul); 
- });
+  menuDiv.appendChild(drinkTitle);
+  menuDiv.appendChild(drinks);
+
 }
 
 export { renderMenu };
