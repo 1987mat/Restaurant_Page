@@ -7,6 +7,8 @@ import { footerInfo } from './footer';
 
 const content = document.getElementById('content');
 renderNav();
+homePage();
+footerInfo();
 
 function home() {
   content.innerHTML = '';
@@ -29,10 +31,7 @@ function contact() {
   footerInfo();
 }
 
-homePage();
-footerInfo();
-
-// Event listeners when clicking the nav links
+// Event listeners when clicking nav links
 document.addEventListener('click', (e) => {
   const target = e.target.innerText;
 

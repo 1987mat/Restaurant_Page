@@ -1,28 +1,42 @@
-body {
-  font-family: 'Karla', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Nav */
+
 nav {
-  background: aliceblue;
-  height: 120px;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: #FFF5EE;
+  border-bottom: 1px solid black;
 }
 
 .main-title {
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: -15px;
+  margin-bottom: 5px;
   text-align: center;
   padding-top: 20px;
 }
 
-.nav-div {
-  height: 60px;
-}
-
 .nav-links {
-  font-size: 20px;
-  padding: 10px;
-  margin: 173px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px;
+  margin: 170px;
   width: 5px;
-
 }
 
 .nav-links:hover {
@@ -33,19 +47,114 @@ nav {
   font-weight: bolder;
 }
 
-.home-div, .menu-div, .address-div, .hours-div {
+/* Home Page */
+
+.welcome-title, .subtitle {
   text-align: center;
-  margin: 80px;
+  font-size: 40px;
+  color: #FFF5EE;
+  position: relative;
+  top: 170px;
 }
 
+.subtitle {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.home-div {
+  background: url("/images/pizza.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Menu Page */
+
+.menu-title {
+  font-size: 40px;
+}
+
+.menu-div {
+  text-align: center;
+  margin: 150px 150px;
+}
+
+.pizza-name, .drink-name {
+  padding: 30px;
+}
+
+hr {
+  margin: 30px auto 5px auto;
+  width: 300px;
+}
+
+/* Contact Page */
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.address-div {
+  text-align: center;
+  margin: 150px;
+}
+
+.hours-div {
+  text-align: center;
+  margin-top: -130px;
+  margin-bottom: 110px;
+}
+
+.bi-facebook {
+  font-size: 40px;
+  margin-left: 600px;
+  color: blue;
+  position: relative;
+  bottom: 50px;
+}
+
+.bi-facebook:hover {
+  cursor: pointer;
+}
+
+.bi-instagram {
+  font-size: 35px;
+  padding: 15px;
+  position: relative;
+  bottom: 50px;
+}
+
+.bi-instagram:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+
 .footer-div {
-  height: 100px;
-  background: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF5EE;
+  margin-top: auto;
+  border-top: 1px solid black;
 }
 
 .copyright {
   font-size: 18px;
   padding: 20px;
 }
+
+.github-link {
+  text-decoration: none;
+  color: black;
+}
+
+.bi-github {
+  font-size: 40px;
+}
+
+
 
 

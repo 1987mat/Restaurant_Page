@@ -1,15 +1,18 @@
 import { content } from './index';
 
-
 function renderNav() {
   const nav = document.createElement('nav');
+
   const navDiv = document.createElement('div');
   navDiv.classList.add('nav-div')
+
   const pageTitle = document.createElement('h1');
   pageTitle.innerHTML = 'Pizzeria Del Campo';
   pageTitle.classList.add('main-title');
-  nav.appendChild(pageTitle);
 
+  nav.appendChild(pageTitle);
+  
+  // Create array of nav links
   const navItems = ['Home', 'Menu', 'Contact'];
 
   for(let i = 0; i < navItems.length; i++) {
