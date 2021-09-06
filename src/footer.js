@@ -1,8 +1,8 @@
 import { content } from './index';
 
 function footerInfo() {
-  const footerDiv = document.createElement('div');
-  footerDiv.classList.add('footer-div')
+  const footer = document.createElement('div');
+  footer.classList.add('footer')
 
   const copyright = document.createElement('p');
   copyright.classList.add('copyright');
@@ -16,11 +16,9 @@ function footerInfo() {
   githubIcon.classList.add('bi-github');
 
   githubLink.appendChild(githubIcon);
-  footerDiv.appendChild(copyright);
-  footerDiv.appendChild(githubLink);
-
-  content.appendChild(footerDiv);
-
+  footer.appendChild(copyright);
+  footer.appendChild(githubLink);
+  content.appendChild(footer);
 }
 
 export { footerInfo };

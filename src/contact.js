@@ -1,6 +1,10 @@
 import { content } from './index';
 
 function contactInfo() {
+
+  const contactDiv = document.createElement('div');
+  contactDiv.classList.add('contact-div');
+
   // Create divs for Address and Hours
   const addressDiv = document.createElement('div');
   addressDiv.classList.add('address-div');
@@ -15,8 +19,7 @@ function contactInfo() {
   const address = document.createElement('p');
   address.innerHTML = '2023 Lorem Ipsum Street, 9000 <br><br> New York, NY';
   addressDiv.appendChild(address);
-  content.appendChild(addressDiv);
-
+  
   // Hours
   const hoursTitle = document.createElement('h4');
   hoursTitle.innerHTML = 'HOURS';
@@ -24,9 +27,11 @@ function contactInfo() {
   const hours = document.createElement('p');
   hours.innerHTML = 'Monday - Thursday : 9am to 9pm <br><br> Friday - Saturday : 9am to 11pm <br><br> Sunday : Closed';
   hoursDiv.appendChild(hours);
-  content.appendChild(hoursDiv);
 
   // SM Icons
+  const iconDiv = document.createElement('div');
+  iconDiv.classList.add('icon-div');
+
   const fbIcon = document.createElement('i');
   fbIcon.classList.add('bi');
   fbIcon.classList.add('bi-facebook');
@@ -35,8 +40,13 @@ function contactInfo() {
   igIcon.classList.add('bi');
   igIcon.classList.add('bi-instagram');
 
-  content.appendChild(fbIcon);
-  content.appendChild(igIcon);
+  iconDiv.appendChild(fbIcon);
+  iconDiv.appendChild(igIcon);
+
+  contactDiv.appendChild(addressDiv);
+  contactDiv.appendChild(hoursDiv);
+  contactDiv.appendChild(iconDiv);
+  content.appendChild(contactDiv);
 }
 
 export { contactInfo };

@@ -1,6 +1,8 @@
 import { content } from './index';
 
 function homePage() {
+  window.scroll(0, 0);
+  
   const homeDiv = document.createElement('div');
   homeDiv.classList.add('home-div');
 
@@ -11,7 +13,7 @@ function homePage() {
   const subtitle = document.createElement('h5');
   subtitle.innerHTML = 'Artisan Pizza since 1958';
   subtitle.classList.add('subtitle');
-  
+
   homeDiv.appendChild(welcomeTitle);
   welcomeTitle.after(subtitle);
   content.appendChild(homeDiv);
