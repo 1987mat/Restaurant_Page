@@ -12,7 +12,6 @@ html, body {
 }
 
 /* Nav */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -51,10 +50,11 @@ nav {
 
 .nav-item:hover {
   cursor: pointer;
-  position: relative;
-  bottom: 3px;
-  color: darkgray;
-  font-weight: bolder;
+  border-bottom: 3px solid black;
+}
+
+.clicked {
+  font-size: 50px;
 }
 
 .hamburger {
@@ -72,7 +72,6 @@ nav {
 }
 
 /* Home Page */
-
 .welcome-title, .subtitle {
   text-align: center;
   font-size: 40px;
@@ -94,7 +93,6 @@ nav {
 }
 
 /* Menu Page */
-
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -132,7 +130,6 @@ hr {
 }
 
 /* Contact Page */
-
 h4 {
   text-align: center;
   font-size: 1.5rem;
@@ -181,7 +178,6 @@ p {
 }
 
 /* Footer */
-
 .footer {
   width: 100%;
   display: flex;
@@ -241,6 +237,7 @@ p {
     cursor: pointer;
   }
 
+  /* BURGER */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }

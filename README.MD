@@ -1,1 +1,1 @@
-Restaurant Page project using HTML/CSS/JS and Webpack.
+Restaurant Website project using HTML/CSS/JS, ES6 Modules and Webpack.

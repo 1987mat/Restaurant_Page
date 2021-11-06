@@ -2,7 +2,7 @@ import { content } from './index';
 
 function homePage() {
   window.scroll(0, 0);
-  
+
   const homeDiv = document.createElement('div');
   homeDiv.classList.add('home-div');
 

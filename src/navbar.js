@@ -38,8 +38,10 @@ function renderNav() {
   hamburger.addEventListener('click', mobileMenu);
 
   function mobileMenu() {
+    // Transform hamburger icon into 'X' icon
     hamburger.classList.toggle("active");
-    ul.classList.toggle("active");
+    // Show menu links
+    ul.classList.toggle("active")
   }
 }
 
