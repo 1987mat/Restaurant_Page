@@ -13,7 +13,7 @@ function renderNav() {
   // Create array of nav links
   const navItems = ['Home', 'Menu', 'Contact'];
 
-  for(let i = 0; i < navItems.length; i++) {
+  for (let i = 0; i < navItems.length; i++) {
     let link = document.createElement('li');
     link.innerText = navItems[i];
     link.classList.add('nav-item');
@@ -23,7 +23,7 @@ function renderNav() {
   const hamburger = document.createElement('div');
   hamburger.classList.add('hamburger');
 
-  for(let j = 0; j < navItems.length; j++) {
+  for (let j = 0; j < navItems.length; j++) {
     let bar = document.createElement('span');
     bar.classList.add('bar');
     hamburger.appendChild(bar);
@@ -39,10 +39,10 @@ function renderNav() {
 
   function mobileMenu() {
     // Transform hamburger icon into 'X' icon
-    hamburger.classList.toggle("active");
+    hamburger.classList.toggle('active');
     // Show menu links
-    ul.classList.toggle("active")
+    ul.classList.toggle('active');
   }
 }
 
-export{ renderNav };
+export { renderNav };

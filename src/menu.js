@@ -21,25 +21,24 @@ function renderMenu() {
   const pizzaMenu = [
     {
       name: 'Margherita',
-      description: 'Fresh tomatoes, mozzarella and basil.'
+      description: 'Fresh tomatoes, mozzarella and basil.',
     },
     {
       name: 'Pepperoni',
-      description: 'Fresh tomatoes, mozzarella, salami(spicy).'
+      description: 'Fresh tomatoes, mozzarella, salami(spicy).',
     },
     {
       name: 'Marinara',
-      description: 'Tomato sauce and basil.'
+      description: 'Tomato sauce and basil.',
     },
     {
       name: 'Vegeterian',
-      description: 'Mushrooms, zucchini, tomatoes, prtichoke, Peppers.'
+      description: 'Mushrooms, zucchini, tomatoes, prtichoke, Peppers.',
     },
   ];
 
   // Loop through items in the array and create the menu
   pizzaMenu.forEach((item) => {
-
     let name = document.createElement('h4');
     name.classList.add('pizza-name');
     name.innerHTML = item.name;
@@ -47,7 +46,7 @@ function renderMenu() {
     let description = document.createElement('p');
     description.classList.add('pizza-description');
     description.innerHTML = item.description;
-  
+
     menuDiv.appendChild(name);
     name.after(description);
   });
@@ -55,11 +54,12 @@ function renderMenu() {
   menuDiv.appendChild(hr);
 
   const drinkTitle = document.createElement('h3');
-  drinkTitle.innerHTML ='Drinks';
+  drinkTitle.innerHTML = 'Drinks';
   drinkTitle.classList.add('drink-title');
 
   const drinks = document.createElement('p');
-  drinks.innerHTML = 'Sparkling Water <br><br> Coca-Cola <br><br> House Wine <br><br> House Beer';
+  drinks.innerHTML =
+    'Sparkling Water <br><br> Coca-Cola <br><br> House Wine <br><br> House Beer';
 
   menuDiv.appendChild(drinkTitle);
   menuDiv.appendChild(drinks);

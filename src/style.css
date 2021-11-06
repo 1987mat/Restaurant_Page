@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +23,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1;
-  background: #FFF5EE;
+  background: #fff5ee;
   border-bottom: 1px solid black;
 }
 
@@ -72,10 +73,11 @@ nav {
 }
 
 /* Home Page */
-.welcome-title, .subtitle {
+.welcome-title,
+.subtitle {
   text-align: center;
   font-size: 40px;
-  color: #FFF5EE;
+  color: #fff5ee;
   position: relative;
   top: 170px;
 }
@@ -86,7 +88,7 @@ nav {
 }
 
 .home-div {
-  background: url("/images/pizza.jpg");
+  background: url('/images/pizza.jpg');
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -97,14 +99,14 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .menu-title {
   text-align: center;
   font-family: 'MonteCarlo', cursive;
   font-weight: 500;
-  font-size: 3rem; 
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -114,13 +116,14 @@ nav {
 }
 
 .menu-div {
-  background: #FFFAFA;
+  background: #fffafa;
   margin: 120px 150px;
   padding: 30px;
   border: 0.5px solid black;
 }
 
-.pizza-name, .drink-title {
+.pizza-name,
+.drink-title {
   padding: 30px 20px 30px 20px;
 }
 
@@ -147,7 +150,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .address-div {
@@ -183,7 +186,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF5EE;
+  background: #fff5ee;
   margin-top: auto;
   border-top: 1px solid black;
 }
@@ -206,8 +209,8 @@ p {
 
 /* Media Query */
 @media only screen and (max-width: 768px) {
-  body { 
-    font-size: 20%; 
+  body {
+    font-size: 20%;
   }
 
   .nav-menu {
@@ -220,8 +223,7 @@ p {
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow:
-      0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
   .nav-menu.active {
@@ -250,7 +252,3 @@ p {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
-
-
-

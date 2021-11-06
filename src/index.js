@@ -1,4 +1,4 @@
-import "./style.css";
+import './style.css';
 import { renderNav } from './navbar';
 import { homePage } from './home';
 import { renderMenu } from './menu';
@@ -35,13 +35,13 @@ function contact() {
 document.addEventListener('click', (e) => {
   const target = e.target.innerText;
 
-  if(target == 'Home') {
+  if (target == 'Home') {
     home();
   }
-  if(target == 'Menu') {
+  if (target == 'Menu') {
     menu();
   }
-  if(target == 'Contact') {
+  if (target == 'Contact') {
     contact();
   }
 });

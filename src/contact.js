@@ -1,7 +1,6 @@
 import { content } from './index';
 
 function contactInfo() {
-
   const contactDiv = document.createElement('div');
   contactDiv.classList.add('contact-div');
 
@@ -19,13 +18,14 @@ function contactInfo() {
   const address = document.createElement('p');
   address.innerHTML = '2023 Lorem Ipsum Street, 9000 <br><br> New York, NY';
   addressDiv.appendChild(address);
-  
+
   // Hours
   const hoursTitle = document.createElement('h4');
   hoursTitle.innerHTML = 'HOURS';
   hoursDiv.appendChild(hoursTitle);
   const hours = document.createElement('p');
-  hours.innerHTML = 'Monday - Thursday : 9am to 9pm <br><br> Friday - Saturday : 9am to 11pm <br><br> Sunday : Closed';
+  hours.innerHTML =
+    'Monday - Thursday : 9am to 9pm <br><br> Friday - Saturday : 9am to 11pm <br><br> Sunday : Closed';
   hoursDiv.appendChild(hours);
 
   // SM Icons

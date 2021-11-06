@@ -2,14 +2,14 @@ import { content } from './index';
 
 function footerInfo() {
   const footer = document.createElement('div');
-  footer.classList.add('footer')
+  footer.classList.add('footer');
 
   const copyright = document.createElement('p');
   copyright.classList.add('copyright');
   copyright.innerHTML = 'Copyright © 2021 Mat';
 
   const githubLink = document.createElement('a');
-  githubLink.href = "https://github.com/1987mat";
+  githubLink.href = 'https://github.com/1987mat';
   githubLink.classList.add('github-link');
 
   const githubIcon = document.createElement('i');
