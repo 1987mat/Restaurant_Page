@@ -33,15 +33,23 @@ function contact() {
 
 // Event listeners when clicking nav links
 document.addEventListener('click', (e) => {
-  const target = e.target.innerText;
-
-  if (target == 'Home') {
+  if (
+    e.target.classList.contains('main-title') ||
+    (e.target.classList.contains('nav-item') && e.target.innerText === 'Home')
+  ) {
     home();
   }
-  if (target == 'Menu') {
+
+  if (
+    e.target.classList.contains('nav-item') &&
+    e.target.innerText === 'Menu'
+  ) {
     menu();
   }
-  if (target == 'Contact') {
+  if (
+    e.target.classList.contains('nav-item') &&
+    e.target.innerText === 'Contact'
+  ) {
     contact();
   }
 });

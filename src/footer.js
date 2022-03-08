@@ -4,20 +4,26 @@ function footerInfo() {
   const footer = document.createElement('div');
   footer.classList.add('footer');
 
-  const copyright = document.createElement('p');
-  copyright.classList.add('copyright');
-  copyright.innerHTML = 'Copyright © 2021 Mat';
+  // SM Icons
+  const iconDiv = document.createElement('div');
+  iconDiv.classList.add('icon-div');
 
-  const githubLink = document.createElement('a');
-  githubLink.href = 'https://github.com/1987mat';
-  githubLink.classList.add('github-link');
+  const fbIcon = document.createElement('i');
+  fbIcon.classList.add('bi');
+  fbIcon.classList.add('bi-facebook');
 
-  const githubIcon = document.createElement('i');
-  githubIcon.classList.add('bi-github');
+  const igIcon = document.createElement('i');
+  igIcon.classList.add('bi');
+  igIcon.classList.add('bi-instagram');
 
-  githubLink.appendChild(githubIcon);
-  footer.appendChild(copyright);
-  footer.appendChild(githubLink);
+  const twitterIcon = document.createElement('i');
+  twitterIcon.classList.add('bi');
+  twitterIcon.classList.add('bi-twitter');
+
+  iconDiv.appendChild(fbIcon);
+  iconDiv.appendChild(igIcon);
+  iconDiv.appendChild(twitterIcon);
+  footer.appendChild(iconDiv);
   content.appendChild(footer);
 }
 
