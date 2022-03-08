@@ -15,7 +15,7 @@ function homePage() {
   subtitle.classList.add('subtitle');
 
   const orderNowBtn = document.createElement('button');
-  orderNowBtn.innerHTML = 'ORDER NOW';
+  orderNowBtn.innerHTML = 'Order Online';
   orderNowBtn.classList.add('order-now-link');
 
   homeDiv.appendChild(welcomeTitle);

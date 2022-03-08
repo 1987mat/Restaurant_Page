@@ -65,6 +65,25 @@ function renderMenu() {
   menuDiv.appendChild(drinks);
 
   menuContainer.appendChild(menuDiv);
+
+  // Create array of pizza images
+  const pizzaImages = [
+    { title: 'margherita', src: '/images/margherita.jpg' },
+    { title: 'veggie', src: '/images/veggie.jpg' },
+    { title: 'veggie2', src: '/images/veggie2.jpg' },
+    { title: 'pepperoni', src: '/images/pepperoni.jpg' },
+  ];
+
+  const imagesDiv = document.createElement('div');
+
+  for (let i = 0; i < pizzaImages.length; i++) {
+    let image = document.createElement('img');
+    image.classList.add('menu-images');
+    image.src = pizzaImages[i].src;
+    imagesDiv.appendChild(image);
+  }
+
+  menuContainer.appendChild(imagesDiv);
   content.appendChild(menuContainer);
 }
 

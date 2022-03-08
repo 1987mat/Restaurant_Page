@@ -1,1 +1,3 @@
-Restaurant Website project using HTML/CSS/JS, ES6 Modules and Webpack.
+Restaurant Website brochure.
+
+HTML/CSS/JS, ES6 Modules, Webpack.
