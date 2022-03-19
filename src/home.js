@@ -5,6 +5,7 @@ function homePage() {
 
   const homeDiv = document.createElement('div');
   homeDiv.classList.add('home-div');
+  homeDiv.classList.add('container');
 
   const welcomeTitle = document.createElement('h3');
   welcomeTitle.innerHTML = 'Welcome to Pizzeria Del Campo';

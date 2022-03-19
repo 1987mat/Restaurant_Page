@@ -5,6 +5,7 @@ function renderMenu() {
 
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('menu-container');
+  menuContainer.classList.add('container');
 
   const menuDiv = document.createElement('div');
   menuDiv.classList.add('menu-div');

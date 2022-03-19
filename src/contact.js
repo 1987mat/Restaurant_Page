@@ -4,6 +4,7 @@ import { content } from './index';
 function contactInfo() {
   const contactDiv = document.createElement('div');
   contactDiv.classList.add('contact-div');
+  contactDiv.classList.add('container');
 
   // Create form
   const formDiv = document.createElement('div');
