@@ -41,8 +41,9 @@ document.addEventListener('click', (e) => {
   }
 
   if (
-    e.target.classList.contains('nav-item') &&
-    e.target.innerText === 'Menu'
+    (e.target.classList.contains('nav-item') &&
+      e.target.innerText === 'Menu') ||
+    e.target.classList.contains('order-now-link')
   ) {
     menu();
   }

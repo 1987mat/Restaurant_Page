@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 html,
@@ -11,7 +12,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Nunito', sans-serif;
 }
 
 /* Nav */
@@ -21,18 +21,16 @@ nav {
   align-items: center;
   padding: 1rem 1.5rem;
   width: 100%;
-  height: 90px;
-  position: fixed;
+  height: 5em;
   top: 0;
-  z-index: 1;
-  background-color: #eeede7;
+  background-color: #f4f0ec;
 }
 
 .main-title {
-  font-size: 30px;
-  margin-left: 2.5em;
+  font-size: 2rem;
+  margin-left: 1em;
   text-align: center;
-  color: #383838;
+  color: #282828;
 }
 
 .main-title:hover {
@@ -50,7 +48,7 @@ nav {
   margin-right: 5.5em;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #585858;
+  color: #282828;
   transition: all 0.1s ease-in;
 }
 
@@ -60,7 +58,7 @@ nav {
 }
 
 .clicked {
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 .hamburger {
@@ -81,15 +79,16 @@ nav {
 .welcome-title,
 .subtitle {
   text-align: center;
-  font-size: 50px;
-  color: #fff5ee;
+  font-size: 3rem;
+  color: #f4f0ec;
   position: relative;
-  top: 120px;
+  top: 1em;
 }
 
 .subtitle {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 1rem;
+  padding: 1em;
+  margin-top: 2em;
 }
 
 .order-now-link {
@@ -100,17 +99,17 @@ nav {
   border-radius: 10px;
   box-shadow: 1px 1px 1px gray;
   display: block;
-  font-weight: 600;
-  font-size: 1rem;
-  background-color: #eeede7;
+  font-size: 1.2rem;
+  background-color: #f4f0ec;
   color: #282828;
-  width: 12%;
+  width: 15%;
+  box-shadow: 2px 2px 2px black;
   transition: all 0.2s ease-in;
 }
 
 .order-now-link:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: #fffaf0;
 }
 
 .order-now-link:active {
@@ -129,11 +128,15 @@ nav {
 .menu-container {
   display: flex;
   align-items: center;
+  margin-top: -5em;
 }
 
 .images-div {
   display: flex;
   flex-wrap: wrap;
+  gap: 1em;
+  margin: 3em;
+  justify-content: space-around;
 }
 
 .menu-title {
@@ -141,7 +144,6 @@ nav {
   font-family: 'MonteCarlo', cursive;
   font-weight: 500;
   font-size: 3rem;
-  margin-bottom: 20px;
 }
 
 .drink-title {
@@ -152,33 +154,34 @@ nav {
 .menu-div {
   background: whitesmoke;
   border: none;
+  margin: 9em;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px green;
-  margin: 120px 150px;
-  padding: 30px;
-  border: 0.5px solid black;
+  box-shadow: 2px 2px 2px green;
+  padding: 2em;
 }
 
 .pizza-name,
 .drink-title {
-  padding: 30px 20px 30px 20px;
+  padding: 2em;
 }
 
 hr {
-  margin: 30px auto 5px auto;
-  width: 300px;
+  margin: 2em auto 1em auto;
+  width: 18em;
 }
 
 .menu-images {
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 70%;
+  box-shadow: 2px 2px 2px green;
+  border-radius: 10px;
 }
 
 /* Contact Page */
 h4 {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 p {
@@ -186,17 +189,79 @@ p {
   font-size: 1rem;
 }
 
+.form-div {
+  margin-top: 3em;
+  width: 50%;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  justify-content: center;
+  gap: 2em;
+}
+
+input,
+textarea {
+  padding: 0.8em;
+  border-radius: 5px;
+  border-top: none;
+}
+
+textarea {
+  height: 5em;
+}
+
+.submit-btn {
+  padding: 0.8em;
+  height: 3em;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e4e2;
+  opacity: 0.9;
+  color: black;
+  box-shadow: 2px 2px 2px gray;
+  transition: all 0.2s ease-in;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #fffaf0;
+}
+
+.submit-btn:active {
+  transform: translateY(-2px);
+}
+
 .contact-div {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.address-div {
-  margin: 50px;
+.info-div {
+  margin-top: 5em;
+  display: flex;
+  gap: 10em;
+}
+
+.success-div {
+  margin: 6em;
+  display: none;
+}
+
+.message {
+  font-size: 1.5rem;
 }
 
 /* Footer */
@@ -204,7 +269,7 @@ p {
   width: 100%;
   height: 5em;
   align-items: center;
-  background-color: #eeede7;
+  background-color: #f4f0ec;
   bottom: 0;
   padding-top: 1em;
 }
@@ -215,7 +280,7 @@ p {
 }
 
 .bi-facebook {
-  font-size: 35px;
+  font-size: 2.2em;
   color: blue;
 }
 
@@ -224,7 +289,7 @@ p {
 }
 
 .bi-instagram {
-  font-size: 35px;
+  font-size: 2.2em;
   padding-left: 1rem;
   color: darkred;
 }
@@ -234,7 +299,7 @@ p {
 }
 
 .bi-twitter {
-  font-size: 35px;
+  font-size: 2.2em;
   padding-left: 1rem;
   color: skyblue;
 }
@@ -244,22 +309,27 @@ p {
 }
 
 /* Media Query */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 20%;
+@media only screen and (max-width: 786px) {
+  html {
+    font-size: 50%;
+  }
+
+  .order-now-link {
+    width: 25%;
   }
 
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 5em;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f4f0ec;
     width: 100%;
-    border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.2s linear;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 3;
+    opacity: 0.9;
   }
 
   .nav-menu.active {
@@ -267,7 +337,7 @@ p {
   }
 
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1em;
   }
 
   .hamburger {
@@ -276,6 +346,7 @@ p {
   }
 
   /* BURGER */
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -286,5 +357,24 @@ p {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .images-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 5em;
+    justify-content: space-around;
+  }
+
+  .menu-images {
+    height: 40%;
+    width: 50%;
+    box-shadow: 2px 2px 2px green;
+    border-radius: 10px;
+  }
+
+  .info-div {
+    flex-direction: column;
   }
 }

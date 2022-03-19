@@ -71,10 +71,11 @@ function renderMenu() {
     { title: 'margherita', src: '/images/margherita.jpg' },
     { title: 'veggie', src: '/images/veggie.jpg' },
     { title: 'veggie2', src: '/images/veggie2.jpg' },
-    { title: 'pepperoni', src: '/images/pepperoni.jpg' },
+    { title: 'pepperoni', src: '/images/pepp.jpg' },
   ];
 
   const imagesDiv = document.createElement('div');
+  imagesDiv.classList.add('images-div');
 
   for (let i = 0; i < pizzaImages.length; i++) {
     let image = document.createElement('img');
