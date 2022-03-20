@@ -1,4 +1,3 @@
-import { footerInfo } from './footer';
 import { content } from './index';
 
 function contactInfo() {

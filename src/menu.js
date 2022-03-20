@@ -69,10 +69,10 @@ function renderMenu() {
 
   // Create array of pizza images
   const pizzaImages = [
-    { title: 'margherita', src: '/images/margherita.jpg' },
-    { title: 'veggie', src: '/images/veggie.jpg' },
-    { title: 'veggie2', src: '/images/veggie2.jpg' },
-    { title: 'pepperoni', src: '/images/pepp.jpg' },
+    { title: 'margherita', src: 'assets/images/margherita.jpg' },
+    { title: 'veggie', src: 'assets/images/pepp.jpg' },
+    { title: 'veggie2', src: 'assets/images/veggie.jpg' },
+    { title: 'pepperoni', src: 'assets/images/veggie2.jpg' },
   ];
 
   const imagesDiv = document.createElement('div');

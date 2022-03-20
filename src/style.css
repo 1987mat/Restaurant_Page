@@ -116,7 +116,6 @@ nav {
   color: #282828;
   width: 18%;
   height: 2.8em;
-  box-shadow: 2px 2px 2px black;
   transition: all 0.2s ease-in;
 }
 
@@ -130,7 +129,7 @@ nav {
 }
 
 .home-div {
-  background: url('/images/pizza.jpg');
+  background: url('/dist/assets/images/pizza.jpg');
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
