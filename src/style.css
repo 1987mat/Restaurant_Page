@@ -23,7 +23,7 @@ nav {
   width: 100%;
   height: 5em;
   top: 0;
-  background-color: #f4f0ec;
+  background-color: white;
 }
 
 .main-title {
@@ -47,6 +47,7 @@ nav {
   list-style-type: none;
   margin-right: 5.5em;
   font-size: 1.2rem;
+  font-weight: bold;
   color: #282828;
   transition: all 0.1s ease-in;
 }
@@ -67,7 +68,7 @@ nav {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #f4f0ec;
 }
 
 .container {
@@ -101,27 +102,28 @@ nav {
   font-size: 1rem;
   padding: 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .order-now-link {
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 3em;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 1px 1px 1px gray;
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: #f4f0ec;
+  background-color: lightgray;
   color: #282828;
-  width: 18%;
+  width: 100%;
   height: 2.8em;
   transition: all 0.2s ease-in;
 }
 
 .order-now-link:hover {
   cursor: pointer;
-  background-color: #fffaf0;
+  background-color: whitesmoke;
 }
 
 .order-now-link:active {
@@ -129,10 +131,67 @@ nav {
 }
 
 .home-div {
-  background: url('/dist/assets/images/pizza.jpg');
+  display: flex;
+  flex-direction: column;
+  height: 450vh;
+}
+
+.hero-div {
+  background: url('/dist/images/pizza.jpg');
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 30%;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.article-home-image {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 6em;
+}
+
+.text-div {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.homepage-text {
+  padding: 3em;
+  text-align: start;
+  line-height: 2.5;
+}
+
+.follow-text {
+  text-align: center;
+  margin: 3em;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feed-div {
+  margin: 0 auto;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed {
+  width: 30%;
+  height: 100%;
+  transition: all 0.2s linear;
+}
+
+.feed:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* Menu Page */
@@ -322,7 +381,16 @@ textarea {
 /* Media Query */
 @media only screen and (max-width: 786px) {
   html {
-    font-size: 50%;
+    font-size: 40%;
+  }
+
+  .main-title {
+    display: none;
+  }
+
+  .hamburger .bar {
+    background-color: black;
+    border-radius: 5px;
   }
 
   .order-now-link {
@@ -333,15 +401,16 @@ textarea {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5em;
+    top: 0;
     flex-direction: column;
     background-color: #f4f0ec;
     width: 100%;
+    height: 50%;
     text-align: center;
     transition: all 0.2s linear;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 3;
-    opacity: 0.9;
+    opacity: 0.95;
   }
 
   .nav-menu.active {
@@ -350,14 +419,21 @@ textarea {
 
   .nav-item {
     margin: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+    z-index: 3;
   }
 
-  /* BURGER */
+  /* BURGER ACTIVE */
+  .hamburger.active .bar {
+    background-color: black;
+  }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -370,19 +446,17 @@ textarea {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .images-div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    margin: 5em;
-    justify-content: space-around;
+  .welcome-title,
+  .subtitle {
+    padding: 0.5em 2em;
   }
 
-  .menu-images {
-    height: 40%;
-    width: 50%;
-    box-shadow: 2px 2px 2px green;
-    border-radius: 10px;
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .images-div {
+    display: none;
   }
 
   .info-div {
