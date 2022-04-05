@@ -15,7 +15,7 @@ function homePage() {
   welcomeTitle.classList.add('welcome-title');
 
   const subtitle = document.createElement('h5');
-  subtitle.innerHTML = 'Artisan Pizza since 1958';
+  subtitle.innerHTML = 'Artisan Pizza since 1960';
   subtitle.classList.add('subtitle');
 
   const orderNowBtn = document.createElement('button');

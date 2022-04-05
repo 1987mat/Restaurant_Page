@@ -8,7 +8,8 @@
     "format:write": "prettier --write .",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix .",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "webpack-dev-server --mode development --inline --progress --watch"
   },
   "keywords": [],
   "author": "",

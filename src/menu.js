@@ -16,14 +16,10 @@ function renderMenu() {
   title.innerHTML = 'MENU';
   title.classList.add('menu-title');
 
-  menuDiv.appendChild(title);
+  menuContainer.appendChild(title);
 
   // Create array of pizza items
   const pizzaMenu = [
-    {
-      name: 'Margherita',
-      description: 'Fresh tomatoes, mozzarella and basil.',
-    },
     {
       name: 'Pepperoni',
       description: 'Fresh tomatoes, mozzarella, salami(spicy).',
@@ -33,7 +29,7 @@ function renderMenu() {
       description: 'Tomato sauce and basil.',
     },
     {
-      name: 'Vegeterian',
+      name: 'Vegetarian',
       description: 'Mushrooms, zucchini, tomatoes, prtichoke, Peppers.',
     },
   ];
@@ -69,7 +65,6 @@ function renderMenu() {
 
   // Create array of pizza images
   const pizzaImages = [
-    { title: 'margherita', src: 'images/margherita.jpg' },
     { title: 'veggie', src: 'images/pepp.jpg' },
     { title: 'veggie2', src: 'images/veggie.jpg' },
     { title: 'pepperoni', src: 'images/veggie2.jpg' },
