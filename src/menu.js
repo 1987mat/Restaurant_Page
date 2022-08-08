@@ -12,12 +12,6 @@ function renderMenu() {
 
   const hr = document.createElement('hr');
 
-  const title = document.createElement('h2');
-  title.innerHTML = 'MENU';
-  title.classList.add('menu-title');
-
-  menuContainer.appendChild(title);
-
   // Create array of pizza items
   const pizzaMenu = [
     {
@@ -68,6 +62,7 @@ function renderMenu() {
     { title: 'veggie', src: 'images/pepp.jpg' },
     { title: 'veggie2', src: 'images/veggie.jpg' },
     { title: 'pepperoni', src: 'images/veggie2.jpg' },
+    { title: 'veg', src: 'images/veg.jpg' },
   ];
 
   const imagesDiv = document.createElement('div');

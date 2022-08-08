@@ -10,6 +10,8 @@ function homePage() {
   const heroDiv = document.createElement('div');
   heroDiv.classList.add('hero-div');
 
+  const welcomeContainer = document.createElement('div');
+  welcomeContainer.classList.add('welcome-container');
   const welcomeTitle = document.createElement('h3');
   welcomeTitle.innerHTML = 'Welcome to Pizzeria Del Campo';
   welcomeTitle.classList.add('welcome-title');
@@ -21,6 +23,7 @@ function homePage() {
   const orderNowBtn = document.createElement('button');
   orderNowBtn.innerHTML = 'Order Online';
   orderNowBtn.classList.add('order-now-link');
+  welcomeContainer.append(welcomeTitle, subtitle, orderNowBtn);
 
   const articleSection = document.createElement('div');
   articleSection.classList.add('article-section');
@@ -105,10 +108,7 @@ function homePage() {
     feedDiv
   );
 
-  heroDiv.appendChild(welcomeTitle);
-  welcomeTitle.after(subtitle);
-  heroDiv.appendChild(orderNowBtn);
-
+  heroDiv.append(welcomeContainer);
   homeDiv.append(heroDiv, articleSection);
   content.appendChild(homeDiv);
 }

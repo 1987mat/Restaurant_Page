@@ -76,27 +76,21 @@ function contactInfo() {
     'Monday - Thursday : 9am to 9pm <br><br> Friday - Saturday : 9am to 11pm <br><br> Sunday : Closed';
   hoursDiv.appendChild(hours);
 
-  infoDiv.appendChild(addressDiv);
-  infoDiv.appendChild(hoursDiv);
-
-  // Success message
-  const successDiv = document.createElement('div');
-  successDiv.classList.add('success-div');
-
-  const message = document.createElement('p');
-  message.classList.add('message');
-  message.innerText = 'Thanks! You will hear back from us shortly!';
-
-  successDiv.appendChild(message);
-  contactDiv.appendChild(successDiv);
-  contactDiv.appendChild(formDiv);
-  contactDiv.appendChild(infoDiv);
+  contactDiv.append(formDiv, infoDiv);
+  infoDiv.append(addressDiv, hoursDiv);
   content.appendChild(contactDiv);
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    successDiv.style.display = 'block';
-    formDiv.style.display = 'none';
+    const message = document.createElement('p');
+    message.classList.add('message');
+    message.innerText = 'Thanks! You will hear back from us shortly!';
+    form.insertAdjacentElement('beforebegin', message);
+
+    setTimeout(() => {
+      message.innerText = '';
+    }, 3000);
+    form.reset();
   });
 }
 
