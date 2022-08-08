@@ -13,7 +13,7 @@ function homePage() {
   const welcomeContainer = document.createElement('div');
   welcomeContainer.classList.add('welcome-container');
   const welcomeTitle = document.createElement('h3');
-  welcomeTitle.innerHTML = 'Welcome to Pizzeria Del Campo';
+  welcomeTitle.innerHTML = 'Pizzeria Del Campo';
   welcomeTitle.classList.add('welcome-title');
 
   const subtitle = document.createElement('h5');
@@ -21,7 +21,7 @@ function homePage() {
   subtitle.classList.add('subtitle');
 
   const orderNowBtn = document.createElement('button');
-  orderNowBtn.innerHTML = 'Order Online';
+  orderNowBtn.innerHTML = 'MENU';
   orderNowBtn.classList.add('order-now-link');
   welcomeContainer.append(welcomeTitle, subtitle, orderNowBtn);
 
@@ -96,7 +96,7 @@ function homePage() {
   const text = document.createElement('p');
   text.classList.add('homepage-text');
   text.innerText =
-    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?';
+    'Pizzeria Del Campo was founded in 1960 in NYC. Initially a small pizzeria, the business quickly grew and today is considered one of the top spot for authentic Italian pizza in the whole city. All of our ingredients are carefully selected and imported from overseas. The dough is fermented for hours and we only use a wood fired oven. We are planning to open more locations soon and for now we are happy to have you as our customer.';
 
   textDiv.appendChild(text);
   articleSection.append(

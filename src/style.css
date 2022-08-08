@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
 * {
   margin: 0;
@@ -36,10 +37,11 @@ nav {
 }
 
 .main-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 1em;
   text-align: center;
   color: #282828;
+  font-family: 'Ms Madi', cursive;
 }
 
 .main-title:hover {
@@ -101,23 +103,26 @@ nav {
 
 /* Home Page */
 .welcome-container {
-  padding: 6em;
+  margin-top: -4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
   text-align: center;
 }
 
 .welcome-title {
-  font-size: 3.2rem;
+  font-size: 5rem;
   color: #ebebeb;
+  font-family: 'Ms Madi', cursive;
 }
 
 .subtitle {
   color: #ebebeb;
-  font-size: 1.3rem;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: -2em;
 }
 
 .order-now-link {
@@ -130,10 +135,11 @@ nav {
     rgba(240, 240, 240, 1) 0%,
     rgba(146, 185, 208, 1) 100%
   );
+  margin-top: 1em;
   color: #282828;
   height: 2.5em;
   width: 10em;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   opacity: 1;
   transition: opacity 0.2s ease-in;
@@ -157,7 +163,7 @@ nav {
   background: url('/dist/images/pizza.jpg');
   background-size: cover;
   background-attachment: contain;
-  height: 90vh;
+  height: 100vh;
 }
 
 .article-section {
@@ -190,8 +196,8 @@ nav {
 
 .homepage-text {
   padding: 3em;
-  text-align: start;
-  line-height: 2.5;
+  text-align: center;
+  line-height: 180%;
 }
 
 .follow-text {
@@ -242,8 +248,7 @@ nav {
   width: 80%;
   height: 70%;
   display: flex;
-  justify-content: space-between;
-  gap: 3em;
+  gap: 2em;
 }
 
 .feed {
@@ -360,7 +365,7 @@ p {
 .form-div {
   margin-top: 3em;
   margin-bottom: 5em;
-  width: 70%;
+  width: 55%;
 }
 
 .form-title {
@@ -442,12 +447,7 @@ textarea {
   height: 5em;
   text-align: center;
   font-weight: bold;
-  background: rgb(233, 233, 233);
-  background: linear-gradient(
-    90deg,
-    rgba(233, 233, 233, 1) 0%,
-    rgba(213, 226, 241, 1) 100%
-  );
+  background: #ebebeb;
   bottom: 0;
   padding-top: 1.8em;
 }
@@ -460,6 +460,10 @@ textarea {
 
   .main-title {
     display: none;
+  }
+
+  .welcome-container {
+    padding-top: 10em;
   }
 
   .nav-menu {
@@ -512,14 +516,6 @@ textarea {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .feed-div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
-    margin-top: 5em;
-  }
-
   .menu-container {
     flex-direction: column;
   }
@@ -546,12 +542,6 @@ textarea {
 
   .welcome-container {
     padding-top: 10em;
-  }
-
-  .feed-div {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5em;
   }
 }
 

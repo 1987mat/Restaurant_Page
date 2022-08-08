@@ -3,7 +3,7 @@ import { content } from './index';
 function renderNav() {
   const nav = document.createElement('nav');
   const pageTitle = document.createElement('h1');
-  pageTitle.innerHTML = 'Pizzeria Del Campo';
+  pageTitle.innerHTML = 'PdC';
   pageTitle.classList.add('main-title');
 
   const ul = document.createElement('ul');
