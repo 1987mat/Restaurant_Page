@@ -96,7 +96,7 @@ function homePage() {
   const text = document.createElement('p');
   text.classList.add('homepage-text');
   text.innerText =
-    'Pizzeria Del Campo was founded in 1960 in NYC. Initially a small pizzeria, the business quickly grew and today is considered one of the top spot for authentic Italian pizza in the whole city. All of our ingredients are carefully selected and imported from overseas. The dough is fermented for hours and we only use a wood fired oven. We are planning to open more locations soon and for now we are happy to have you as our customer.';
+    'Pizzeria Del Campo was founded in 1960 in NYC. Initially a small pizzeria, the business quickly grew and today is considered one of the top spots for authentic Italian pizza in the whole city. All of our ingredients are carefully selected and imported. The dough is fermented for hours and all of our pizzas are cooked in a wood fired oven. We look forward to open more locations soon. We are happy to have you as our customer.';
 
   textDiv.appendChild(text);
   articleSection.append(

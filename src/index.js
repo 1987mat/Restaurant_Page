@@ -34,7 +34,7 @@ function contact() {
 // Event listeners when clicking nav links
 document.addEventListener('click', (e) => {
   if (
-    e.target.classList.contains('main-title') ||
+    e.target.classList.contains('logo') ||
     (e.target.classList.contains('nav-item') && e.target.innerText === 'Home')
   ) {
     home();

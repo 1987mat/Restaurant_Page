@@ -2,9 +2,12 @@ import { content } from './index';
 
 function renderNav() {
   const nav = document.createElement('nav');
-  const pageTitle = document.createElement('h1');
-  pageTitle.innerHTML = 'PdC';
-  pageTitle.classList.add('main-title');
+  const logoLink = document.createElement('a');
+  logoLink.classList.add('logo-link');
+  const logo = document.createElement('img');
+  logo.src = 'images/logo.png';
+  logo.classList.add('logo');
+  logoLink.append(logo);
 
   const ul = document.createElement('ul');
   ul.classList.add('nav-menu');
@@ -28,7 +31,7 @@ function renderNav() {
     hamburger.appendChild(bar);
   }
 
-  nav.appendChild(pageTitle);
+  nav.appendChild(logoLink);
   nav.appendChild(ul);
   nav.appendChild(hamburger);
   content.appendChild(nav);

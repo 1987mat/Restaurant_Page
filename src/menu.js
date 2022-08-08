@@ -9,7 +9,6 @@ function renderMenu() {
 
   const menuDiv = document.createElement('div');
   menuDiv.classList.add('menu-div');
-
   const hr = document.createElement('hr');
 
   // Create array of pizza items
